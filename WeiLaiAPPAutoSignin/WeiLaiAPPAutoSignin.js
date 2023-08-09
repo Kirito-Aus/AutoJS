@@ -32,13 +32,7 @@ if (my_btn) {
         // text("开始").findOnce().click();
         console.log('签到成功')
     }else if(id('my_head_info_user_integral_text').exists()){
-        console.log('消失一会');
-        sleep(2000);
-        console.hide();
-        sleep(2000);
         var signin_over_widget = id('my_head_info_user_integral_text').findOnce();
-        console.show();
-        console.log('又出现了')
         console.log('今日已完成签到')   
     }else{
         console.log('特殊情况请反馈')
